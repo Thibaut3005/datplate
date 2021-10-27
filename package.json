@@ -11,7 +11,8 @@
     "work:server": "npx babel src/server -s --watch --verbose --out-dir bin/server",
     "build:client": "npx webpack --progress --profile --colors",
     "work:client": "npx webpack --env=dev --progress --watch",
-    "build": "npm run build:server && npm run build:client"
+    "build": "npm run build:server && npm run build:client",
+    "sass": "sass --watch src/client/styles/style.scss:src/client/styles/style.css"
   },
   "lint-staged": {
     "*.js": [
@@ -52,7 +53,8 @@
     "@mui/material": "^5.0.6",
     "express": "^4.17.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "sass": "^1.43.4"
   },
   "husky": {
     "hooks": {

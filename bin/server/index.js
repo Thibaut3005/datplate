@@ -1,16 +1,19 @@
-"use strict";
+/* becodeorg/mwenbwa
+ *
+ * /src/server/index.js - Server entry point
+ *
+ * coded by leny@BeCode
+ * started at 18/05/2020
+ */
+const express = require("express");
 
-var _express = _interopRequireDefault(require("express"));
-
-var _path = _interopRequireDefault(require("path"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+const path = require("path");
 
 const {
   APP_PORT
 } = process.env;
-const app = (0, _express.default)();
-app.use(_express.default.static(_path.default.resolve(__dirname, "../../bin/client")));
+const app = express();
+app.use(express.static(path.resolve(__dirname, "../../bin/client")));
 app.get("/hello", (req, res) => {
   console.log(`ℹ️  (${req.method.toUpperCase()}) ${req.url}`);
   res.send("Hello, World!");

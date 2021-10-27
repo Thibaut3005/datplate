@@ -6,8 +6,8 @@
  * started at 18/05/2020
  */
 
-import express from "express";
-import path from "path";
+const express = require("express");
+const path = require("path");
 
 const {APP_PORT} = process.env;
 
