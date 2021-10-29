@@ -1,8 +1,9 @@
-@import "partials/header";
+@import "./partials/header";
 
 body {
-    background-color: red;
-    display: flex;
+    background-color:blue;
+    color: white;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
