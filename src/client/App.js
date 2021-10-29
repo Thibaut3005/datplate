@@ -1,10 +1,9 @@
 import * as React from "react";
+import Profil from "./components/Profil";
 
 const App = () => {
     return (
-        <div className={"app"}>
-            <h1>{"Hello"}</h1>
-        </div>
+        <Profil />
     );
 };
 
